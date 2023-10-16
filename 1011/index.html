@@ -6,7 +6,7 @@
     <style>
         #maindiv 
         {
-            background-color: aliceblue;
+            /*background-color: aliceblue;*/
             width: 800px;
             height: 500px;
             display: flex;
@@ -22,12 +22,12 @@
             height: 120px;
             margin-left: 10px;
             margin-top: 10px;
-            background-color: dodgerblue;
+            /*background-color: dodgerblue;*/
         }
 
         #webdiv 
         {
-            background-color: antiquewhite;
+            /*background-color: antiquewhite;*/
             width: 1000px;
             margin-left: auto;
             margin-right: auto;
@@ -35,7 +35,7 @@
 
         #footerdiv
         {
-            background-color:aliceblue;
+            /*background-color:aliceblue;*/
             height:50px;
 
             display:flex;
@@ -51,7 +51,7 @@
 
         #bodydiv
         {
-            background-color:lightcoral;
+            /*background-color:lightcoral;*/
 
             display:flex;
             flex-direction:row;
@@ -60,12 +60,14 @@
 
         #leftdiv 
         {
-            background-color: blueviolet;
+            /*background-color: blueviolet;*/
+            display:flex;
+            flex-direction:column;
         }
 
         #rightdiv 
         {
-            background-color:burlywood;
+            /*background-color:burlywood;*/
             display:flex;
             flex-direction:column;
             align-items:center;
@@ -76,6 +78,29 @@
             border-color:darkgray;
         }
           
+        #updiv
+        {
+            border-style:solid;
+            border-width:2px;
+            border-color:darkgray;
+            border-radius:10px;
+        }
+
+        #downdiv 
+        {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #title1
+        {
+            font-size:20px;
+            font-weight:bold;
+            background-color:lightblue;
+            border-radius:5px;
+        }
 
 
     </style>
@@ -84,10 +109,45 @@
 
 <body>
     <div id="webdiv">
-        web page 
+        
+        <div id="headerdiv" style="display:flex;flex-direction:row; justify-content:center;align-items:center;">
+            <div style="font-size:30pt;color:dodgerblue;text-transform:uppercase;font-weight:bold;">
+                I Love Programming!
+
+            </div>
+            <div>
+                <img src="a.svg" style="height:100px;" />
+            </div>
+        </div>
         <div id="bodydiv">
             <div id="leftdiv">
-                left
+                <div id="updiv" style="width:480px;<!--background-color:lightpink;-->">
+                    <span id="title1">
+                        What I already learned:
+                    </span>
+
+                    <ul>
+                        <li>C#</li>
+                        <li>C# Entity Framework</li>
+                        <li>Database Sqlite</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+
+                <div id="downdiv" style="width: 480px;<!--background-color: aquamarine;-->">
+                    <span id="title2" style="font-size:20px;font-weight:bold;">
+                        What I am going to learn: 
+                    </span>
+
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>BootStrap</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Web REST API</li>
+                    </ol>
+                    
+                </div>
+
             </div>
 
             <div id="rightdiv">
